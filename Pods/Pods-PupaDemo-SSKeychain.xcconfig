@@ -1,0 +1,1 @@
+PODS_PUPADEMO_SSKEYCHAIN_OTHER_LDFLAGS = -framework Security

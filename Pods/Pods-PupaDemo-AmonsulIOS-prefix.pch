@@ -1,0 +1,20 @@
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#endif
+
+#import "Pods-PupaDemo-environment.h"
+//
+// Prefix header for all source files of the 'AmonsulIOS' target in the 'AmonsulIOS' project
+//
+
+#ifdef __OBJC__
+  #import <Foundation/Foundation.h>
+#endif
+
+//
+// Prefix header for all source files of the 'AmonsulIOS' target in the 'AmonsulIOS' project
+//
+
+#ifdef __OBJC__
+  #import <Foundation/Foundation.h>
+#endif

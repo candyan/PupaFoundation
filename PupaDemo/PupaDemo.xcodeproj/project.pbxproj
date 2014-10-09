@@ -1,0 +1,694 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2CFC3DD38F2C4F6BB4B1BEF8 /* libPods-PupaDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A43477ED3CE14D9584B3A5F9 /* libPods-PupaDemoTests.a */; };
+		750C36A318C5B90C0014AD7D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 750C36A218C5B90C0014AD7D /* Foundation.framework */; };
+		750C36A518C5B90C0014AD7D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 750C36A418C5B90C0014AD7D /* CoreGraphics.framework */; };
+		750C36A718C5B90C0014AD7D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 750C36A618C5B90C0014AD7D /* UIKit.framework */; };
+		750C36AD18C5B90C0014AD7D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 750C36AB18C5B90C0014AD7D /* InfoPlist.strings */; };
+		750C36AF18C5B90C0014AD7D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 750C36AE18C5B90C0014AD7D /* main.m */; };
+		750C36B318C5B90C0014AD7D /* PADAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 750C36B218C5B90C0014AD7D /* PADAppDelegate.m */; };
+		750C36B618C5B90C0014AD7D /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 750C36B418C5B90C0014AD7D /* Main_iPhone.storyboard */; };
+		750C36B918C5B90C0014AD7D /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 750C36B718C5B90C0014AD7D /* Main_iPad.storyboard */; };
+		750C36BC18C5B90C0014AD7D /* PADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 750C36BB18C5B90C0014AD7D /* PADViewController.m */; };
+		750C36BE18C5B90C0014AD7D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 750C36BD18C5B90C0014AD7D /* Images.xcassets */; };
+		750C36C518C5B90C0014AD7D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 750C36C418C5B90C0014AD7D /* XCTest.framework */; };
+		750C36C618C5B90C0014AD7D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 750C36A218C5B90C0014AD7D /* Foundation.framework */; };
+		750C36C718C5B90C0014AD7D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 750C36A618C5B90C0014AD7D /* UIKit.framework */; };
+		750C36CF18C5B90C0014AD7D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 750C36CD18C5B90C0014AD7D /* InfoPlist.strings */; };
+		750E3F5618C8269F00F251E3 /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 750E3F5518C8269F00F251E3 /* Reveal.framework */; };
+		750EBE5318DAD6F2000F52B0 /* DefaultSkin.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 750EBE5218DAD6F2000F52B0 /* DefaultSkin.bundle */; };
+		750EBE5418DAD877000F52B0 /* DefaultSkin.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 750EBE5218DAD6F2000F52B0 /* DefaultSkin.bundle */; };
+		7511970618D69F4100DF27FF /* PASkinManagerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7511970518D69F4100DF27FF /* PASkinManagerTest.m */; };
+		7544461E19E67B730018E10C /* NSData+PADigest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7544460C19E67B730018E10C /* NSData+PADigest.m */; };
+		7544461F19E67B730018E10C /* NSDate+PAFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 7544460F19E67B730018E10C /* NSDate+PAFormat.m */; };
+		7544462019E67B730018E10C /* NSDate+PATimeInterval.m in Sources */ = {isa = PBXBuildFile; fileRef = 7544461119E67B730018E10C /* NSDate+PATimeInterval.m */; };
+		7544462119E67B730018E10C /* NSDictionary+PAJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 7544461419E67B730018E10C /* NSDictionary+PAJSONSerialization.m */; };
+		7544462219E67B730018E10C /* NSString+PADigest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7544461719E67B730018E10C /* NSString+PADigest.m */; };
+		7544462319E67B730018E10C /* NSString+PAReplacing.m in Sources */ = {isa = PBXBuildFile; fileRef = 7544461919E67B730018E10C /* NSString+PAReplacing.m */; };
+		7544462419E67B730018E10C /* NSString+PAURLEscape.m in Sources */ = {isa = PBXBuildFile; fileRef = 7544461B19E67B730018E10C /* NSString+PAURLEscape.m */; };
+		938137ECB61F4D7BAA6DFB8B /* libPods-PupaDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FA84F8D16C642F98C79529C /* libPods-PupaDemo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		750C36C818C5B90C0014AD7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 750C369718C5B90C0014AD7D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 750C369E18C5B90C0014AD7D;
+			remoteInfo = PupaDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		750C369F18C5B90C0014AD7D /* PupaDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PupaDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		750C36A218C5B90C0014AD7D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		750C36A418C5B90C0014AD7D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		750C36A618C5B90C0014AD7D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		750C36AA18C5B90C0014AD7D /* PupaDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PupaDemo-Info.plist"; sourceTree = "<group>"; };
+		750C36AC18C5B90C0014AD7D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		750C36AE18C5B90C0014AD7D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		750C36B018C5B90C0014AD7D /* PupaDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PupaDemo-Prefix.pch"; sourceTree = "<group>"; };
+		750C36B118C5B90C0014AD7D /* PADAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PADAppDelegate.h; sourceTree = "<group>"; };
+		750C36B218C5B90C0014AD7D /* PADAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PADAppDelegate.m; sourceTree = "<group>"; };
+		750C36B518C5B90C0014AD7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		750C36B818C5B90C0014AD7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		750C36BA18C5B90C0014AD7D /* PADViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PADViewController.h; sourceTree = "<group>"; };
+		750C36BB18C5B90C0014AD7D /* PADViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PADViewController.m; sourceTree = "<group>"; };
+		750C36BD18C5B90C0014AD7D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		750C36C318C5B90C0014AD7D /* PupaDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PupaDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		750C36C418C5B90C0014AD7D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		750C36CC18C5B90C0014AD7D /* PupaDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PupaDemoTests-Info.plist"; sourceTree = "<group>"; };
+		750C36CE18C5B90C0014AD7D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		750E3F5418C825CF00F251E3 /* PupaDemo copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "PupaDemo copy-Info.plist"; path = "/Users/Candyan/Douban/Mobile/PupaFramework/PupaDemo/PupaDemo copy-Info.plist"; sourceTree = "<absolute>"; };
+		750E3F5518C8269F00F251E3 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
+		750EBE5218DAD6F2000F52B0 /* DefaultSkin.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DefaultSkin.bundle; sourceTree = "<group>"; };
+		7511970518D69F4100DF27FF /* PASkinManagerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PASkinManagerTest.m; sourceTree = "<group>"; };
+		7544460B19E67B730018E10C /* NSData+PADigest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+PADigest.h"; sourceTree = "<group>"; };
+		7544460C19E67B730018E10C /* NSData+PADigest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+PADigest.m"; sourceTree = "<group>"; };
+		7544460E19E67B730018E10C /* NSDate+PAFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+PAFormat.h"; sourceTree = "<group>"; };
+		7544460F19E67B730018E10C /* NSDate+PAFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+PAFormat.m"; sourceTree = "<group>"; };
+		7544461019E67B730018E10C /* NSDate+PATimeInterval.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+PATimeInterval.h"; sourceTree = "<group>"; };
+		7544461119E67B730018E10C /* NSDate+PATimeInterval.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+PATimeInterval.m"; sourceTree = "<group>"; };
+		7544461319E67B730018E10C /* NSDictionary+PAJSONSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+PAJSONSerialization.h"; sourceTree = "<group>"; };
+		7544461419E67B730018E10C /* NSDictionary+PAJSONSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+PAJSONSerialization.m"; sourceTree = "<group>"; };
+		7544461619E67B730018E10C /* NSString+PADigest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PADigest.h"; sourceTree = "<group>"; };
+		7544461719E67B730018E10C /* NSString+PADigest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PADigest.m"; sourceTree = "<group>"; };
+		7544461819E67B730018E10C /* NSString+PAReplacing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PAReplacing.h"; sourceTree = "<group>"; };
+		7544461919E67B730018E10C /* NSString+PAReplacing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PAReplacing.m"; sourceTree = "<group>"; };
+		7544461A19E67B730018E10C /* NSString+PAURLEscape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PAURLEscape.h"; sourceTree = "<group>"; };
+		7544461B19E67B730018E10C /* NSString+PAURLEscape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PAURLEscape.m"; sourceTree = "<group>"; };
+		7544461C19E67B730018E10C /* PACommonFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PACommonFunctions.h; sourceTree = "<group>"; };
+		7544461D19E67B730018E10C /* PupaFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PupaFoundation.h; sourceTree = "<group>"; };
+		9773AA9DCE194302A02393E6 /* Pods-PupaDemo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PupaDemo.xcconfig"; path = "../Pods/Pods-PupaDemo.xcconfig"; sourceTree = "<group>"; };
+		9FA84F8D16C642F98C79529C /* libPods-PupaDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PupaDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A43477ED3CE14D9584B3A5F9 /* libPods-PupaDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PupaDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A633D895BB194BDDB77FDE62 /* Pods-PupaDemoTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PupaDemoTests.xcconfig"; path = "../Pods/Pods-PupaDemoTests.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		750C369C18C5B90C0014AD7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				750C36A518C5B90C0014AD7D /* CoreGraphics.framework in Frameworks */,
+				750C36A718C5B90C0014AD7D /* UIKit.framework in Frameworks */,
+				750E3F5618C8269F00F251E3 /* Reveal.framework in Frameworks */,
+				750C36A318C5B90C0014AD7D /* Foundation.framework in Frameworks */,
+				938137ECB61F4D7BAA6DFB8B /* libPods-PupaDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		750C36C018C5B90C0014AD7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				750C36C518C5B90C0014AD7D /* XCTest.framework in Frameworks */,
+				750C36C718C5B90C0014AD7D /* UIKit.framework in Frameworks */,
+				750C36C618C5B90C0014AD7D /* Foundation.framework in Frameworks */,
+				2CFC3DD38F2C4F6BB4B1BEF8 /* libPods-PupaDemoTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		750C369618C5B90C0014AD7D = {
+			isa = PBXGroup;
+			children = (
+				750C36A818C5B90C0014AD7D /* PupaDemo */,
+				750C36CA18C5B90C0014AD7D /* PupaDemoTests */,
+				750C36A118C5B90C0014AD7D /* Frameworks */,
+				750C36A018C5B90C0014AD7D /* Products */,
+				9773AA9DCE194302A02393E6 /* Pods-PupaDemo.xcconfig */,
+				750E3F5418C825CF00F251E3 /* PupaDemo copy-Info.plist */,
+				A633D895BB194BDDB77FDE62 /* Pods-PupaDemoTests.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		750C36A018C5B90C0014AD7D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				750C369F18C5B90C0014AD7D /* PupaDemo.app */,
+				750C36C318C5B90C0014AD7D /* PupaDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		750C36A118C5B90C0014AD7D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				750E3F5518C8269F00F251E3 /* Reveal.framework */,
+				750C36A218C5B90C0014AD7D /* Foundation.framework */,
+				750C36A418C5B90C0014AD7D /* CoreGraphics.framework */,
+				750C36A618C5B90C0014AD7D /* UIKit.framework */,
+				750C36C418C5B90C0014AD7D /* XCTest.framework */,
+				9FA84F8D16C642F98C79529C /* libPods-PupaDemo.a */,
+				A43477ED3CE14D9584B3A5F9 /* libPods-PupaDemoTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		750C36A818C5B90C0014AD7D /* PupaDemo */ = {
+			isa = PBXGroup;
+			children = (
+				7544460819E67B730018E10C /* Source */,
+				750C36B118C5B90C0014AD7D /* PADAppDelegate.h */,
+				750C36B218C5B90C0014AD7D /* PADAppDelegate.m */,
+				750C36B418C5B90C0014AD7D /* Main_iPhone.storyboard */,
+				750C36B718C5B90C0014AD7D /* Main_iPad.storyboard */,
+				750C36BA18C5B90C0014AD7D /* PADViewController.h */,
+				750C36BB18C5B90C0014AD7D /* PADViewController.m */,
+				750C36BD18C5B90C0014AD7D /* Images.xcassets */,
+				750C36A918C5B90C0014AD7D /* Supporting Files */,
+			);
+			path = PupaDemo;
+			sourceTree = "<group>";
+		};
+		750C36A918C5B90C0014AD7D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				750C36AA18C5B90C0014AD7D /* PupaDemo-Info.plist */,
+				750C36AB18C5B90C0014AD7D /* InfoPlist.strings */,
+				750C36AE18C5B90C0014AD7D /* main.m */,
+				750C36B018C5B90C0014AD7D /* PupaDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		750C36CA18C5B90C0014AD7D /* PupaDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				750C36CB18C5B90C0014AD7D /* Supporting Files */,
+				7511970518D69F4100DF27FF /* PASkinManagerTest.m */,
+			);
+			path = PupaDemoTests;
+			sourceTree = "<group>";
+		};
+		750C36CB18C5B90C0014AD7D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				750EBE5218DAD6F2000F52B0 /* DefaultSkin.bundle */,
+				750C36CC18C5B90C0014AD7D /* PupaDemoTests-Info.plist */,
+				750C36CD18C5B90C0014AD7D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7544460819E67B730018E10C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				7544460919E67B730018E10C /* Extend */,
+				7544461C19E67B730018E10C /* PACommonFunctions.h */,
+				7544461D19E67B730018E10C /* PupaFoundation.h */,
+			);
+			name = Source;
+			path = ../../Source;
+			sourceTree = "<group>";
+		};
+		7544460919E67B730018E10C /* Extend */ = {
+			isa = PBXGroup;
+			children = (
+				7544460A19E67B730018E10C /* NSData */,
+				7544460D19E67B730018E10C /* NSDate */,
+				7544461219E67B730018E10C /* NSDictionary */,
+				7544461519E67B730018E10C /* NSString */,
+			);
+			path = Extend;
+			sourceTree = "<group>";
+		};
+		7544460A19E67B730018E10C /* NSData */ = {
+			isa = PBXGroup;
+			children = (
+				7544460B19E67B730018E10C /* NSData+PADigest.h */,
+				7544460C19E67B730018E10C /* NSData+PADigest.m */,
+			);
+			path = NSData;
+			sourceTree = "<group>";
+		};
+		7544460D19E67B730018E10C /* NSDate */ = {
+			isa = PBXGroup;
+			children = (
+				7544460E19E67B730018E10C /* NSDate+PAFormat.h */,
+				7544460F19E67B730018E10C /* NSDate+PAFormat.m */,
+				7544461019E67B730018E10C /* NSDate+PATimeInterval.h */,
+				7544461119E67B730018E10C /* NSDate+PATimeInterval.m */,
+			);
+			path = NSDate;
+			sourceTree = "<group>";
+		};
+		7544461219E67B730018E10C /* NSDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				7544461319E67B730018E10C /* NSDictionary+PAJSONSerialization.h */,
+				7544461419E67B730018E10C /* NSDictionary+PAJSONSerialization.m */,
+			);
+			path = NSDictionary;
+			sourceTree = "<group>";
+		};
+		7544461519E67B730018E10C /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				7544461619E67B730018E10C /* NSString+PADigest.h */,
+				7544461719E67B730018E10C /* NSString+PADigest.m */,
+				7544461819E67B730018E10C /* NSString+PAReplacing.h */,
+				7544461919E67B730018E10C /* NSString+PAReplacing.m */,
+				7544461A19E67B730018E10C /* NSString+PAURLEscape.h */,
+				7544461B19E67B730018E10C /* NSString+PAURLEscape.m */,
+			);
+			path = NSString;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		750C369E18C5B90C0014AD7D /* PupaDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 750C36D418C5B90C0014AD7D /* Build configuration list for PBXNativeTarget "PupaDemo" */;
+			buildPhases = (
+				B18837CE059E4033A3056B9F /* Check Pods Manifest.lock */,
+				750C369B18C5B90C0014AD7D /* Sources */,
+				750C369C18C5B90C0014AD7D /* Frameworks */,
+				750C369D18C5B90C0014AD7D /* Resources */,
+				2FDDDBCF5723421687A6E07B /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PupaDemo;
+			productName = PupaDemo;
+			productReference = 750C369F18C5B90C0014AD7D /* PupaDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		750C36C218C5B90C0014AD7D /* PupaDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 750C36D718C5B90C0014AD7D /* Build configuration list for PBXNativeTarget "PupaDemoTests" */;
+			buildPhases = (
+				9EC7A7FCD57D41EC98C4C3B7 /* Check Pods Manifest.lock */,
+				750C36BF18C5B90C0014AD7D /* Sources */,
+				750C36C018C5B90C0014AD7D /* Frameworks */,
+				750C36C118C5B90C0014AD7D /* Resources */,
+				955B2B59795345A99B8DEB5B /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				750C36C918C5B90C0014AD7D /* PBXTargetDependency */,
+			);
+			name = PupaDemoTests;
+			productName = PupaDemoTests;
+			productReference = 750C36C318C5B90C0014AD7D /* PupaDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		750C369718C5B90C0014AD7D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PA;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Douban.Inc;
+				TargetAttributes = {
+					750C36C218C5B90C0014AD7D = {
+						TestTargetID = 750C369E18C5B90C0014AD7D;
+					};
+				};
+			};
+			buildConfigurationList = 750C369A18C5B90C0014AD7D /* Build configuration list for PBXProject "PupaDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 750C369618C5B90C0014AD7D;
+			productRefGroup = 750C36A018C5B90C0014AD7D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				750C369E18C5B90C0014AD7D /* PupaDemo */,
+				750C36C218C5B90C0014AD7D /* PupaDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		750C369D18C5B90C0014AD7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				750EBE5418DAD877000F52B0 /* DefaultSkin.bundle in Resources */,
+				750C36B918C5B90C0014AD7D /* Main_iPad.storyboard in Resources */,
+				750C36BE18C5B90C0014AD7D /* Images.xcassets in Resources */,
+				750C36B618C5B90C0014AD7D /* Main_iPhone.storyboard in Resources */,
+				750C36AD18C5B90C0014AD7D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		750C36C118C5B90C0014AD7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				750EBE5318DAD6F2000F52B0 /* DefaultSkin.bundle in Resources */,
+				750C36CF18C5B90C0014AD7D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2FDDDBCF5723421687A6E07B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Pods-PupaDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		955B2B59795345A99B8DEB5B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Pods-PupaDemoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9EC7A7FCD57D41EC98C4C3B7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B18837CE059E4033A3056B9F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		750C369B18C5B90C0014AD7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7544462119E67B730018E10C /* NSDictionary+PAJSONSerialization.m in Sources */,
+				750C36AF18C5B90C0014AD7D /* main.m in Sources */,
+				7544462219E67B730018E10C /* NSString+PADigest.m in Sources */,
+				7544462019E67B730018E10C /* NSDate+PATimeInterval.m in Sources */,
+				750C36BC18C5B90C0014AD7D /* PADViewController.m in Sources */,
+				7544462419E67B730018E10C /* NSString+PAURLEscape.m in Sources */,
+				7544462319E67B730018E10C /* NSString+PAReplacing.m in Sources */,
+				7544461F19E67B730018E10C /* NSDate+PAFormat.m in Sources */,
+				750C36B318C5B90C0014AD7D /* PADAppDelegate.m in Sources */,
+				7544461E19E67B730018E10C /* NSData+PADigest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		750C36BF18C5B90C0014AD7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7511970618D69F4100DF27FF /* PASkinManagerTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		750C36C918C5B90C0014AD7D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 750C369E18C5B90C0014AD7D /* PupaDemo */;
+			targetProxy = 750C36C818C5B90C0014AD7D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		750C36AB18C5B90C0014AD7D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				750C36AC18C5B90C0014AD7D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		750C36B418C5B90C0014AD7D /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				750C36B518C5B90C0014AD7D /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		750C36B718C5B90C0014AD7D /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				750C36B818C5B90C0014AD7D /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		750C36CD18C5B90C0014AD7D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				750C36CE18C5B90C0014AD7D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		750C36D218C5B90C0014AD7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		750C36D318C5B90C0014AD7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		750C36D518C5B90C0014AD7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9773AA9DCE194302A02393E6 /* Pods-PupaDemo.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Candyan/Douban/Mobile/PupaFramework/PupaDemo,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PupaDemo/PupaDemo-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "PupaDemo/PupaDemo-Info.plist";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		750C36D618C5B90C0014AD7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9773AA9DCE194302A02393E6 /* Pods-PupaDemo.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Candyan/Douban/Mobile/PupaFramework/PupaDemo,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PupaDemo/PupaDemo-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "PupaDemo/PupaDemo-Info.plist";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		750C36D818C5B90C0014AD7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A633D895BB194BDDB77FDE62 /* Pods-PupaDemoTests.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PupaDemo.app/PupaDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PupaDemo/PupaDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PupaDemoTests/PupaDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		750C36D918C5B90C0014AD7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A633D895BB194BDDB77FDE62 /* Pods-PupaDemoTests.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PupaDemo.app/PupaDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PupaDemo/PupaDemo-Prefix.pch";
+				INFOPLIST_FILE = "PupaDemoTests/PupaDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		750C369A18C5B90C0014AD7D /* Build configuration list for PBXProject "PupaDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				750C36D218C5B90C0014AD7D /* Debug */,
+				750C36D318C5B90C0014AD7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		750C36D418C5B90C0014AD7D /* Build configuration list for PBXNativeTarget "PupaDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				750C36D518C5B90C0014AD7D /* Debug */,
+				750C36D618C5B90C0014AD7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		750C36D718C5B90C0014AD7D /* Build configuration list for PBXNativeTarget "PupaDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				750C36D818C5B90C0014AD7D /* Debug */,
+				750C36D918C5B90C0014AD7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 750C369718C5B90C0014AD7D /* Project object */;
+}

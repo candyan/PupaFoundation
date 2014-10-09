@@ -1,0 +1,1 @@
+PODS_PUPADEMOTESTS_DOUFOUNDATION_OTHER_LDFLAGS = -framework Security -framework SystemConfiguration
