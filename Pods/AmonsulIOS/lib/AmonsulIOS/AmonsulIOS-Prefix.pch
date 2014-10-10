@@ -1,7 +1,0 @@
-//
-// Prefix header for all source files of the 'AmonsulIOS' target in the 'AmonsulIOS' project
-//
-
-#ifdef __OBJC__
-  #import <Foundation/Foundation.h>
-#endif

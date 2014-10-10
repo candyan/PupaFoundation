@@ -1,1 +1,0 @@
-PODS_PUPADEMO_AMONSULIOS_OTHER_LDFLAGS = -lz -framework CFNetwork -framework CoreLocation -framework CoreTelephony -framework SystemConfiguration
