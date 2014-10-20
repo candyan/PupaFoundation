@@ -33,6 +33,7 @@
 		7544462219E67B730018E10C /* NSString+PADigest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7544461719E67B730018E10C /* NSString+PADigest.m */; };
 		7544462319E67B730018E10C /* NSString+PAReplacing.m in Sources */ = {isa = PBXBuildFile; fileRef = 7544461919E67B730018E10C /* NSString+PAReplacing.m */; };
 		7544462419E67B730018E10C /* NSString+PAURLEscape.m in Sources */ = {isa = PBXBuildFile; fileRef = 7544461B19E67B730018E10C /* NSString+PAURLEscape.m */; };
+		754BB70119F50C3200E15493 /* NSString+PAEmptyString.m in Sources */ = {isa = PBXBuildFile; fileRef = 754BB70019F50C3200E15493 /* NSString+PAEmptyString.m */; };
 		938137ECB61F4D7BAA6DFB8B /* libPods-PupaDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FA84F8D16C642F98C79529C /* libPods-PupaDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +87,8 @@
 		7544461B19E67B730018E10C /* NSString+PAURLEscape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PAURLEscape.m"; sourceTree = "<group>"; };
 		7544461C19E67B730018E10C /* PACommonFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PACommonFunctions.h; sourceTree = "<group>"; };
 		7544461D19E67B730018E10C /* PupaFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PupaFoundation.h; sourceTree = "<group>"; };
+		754BB6FF19F50C3200E15493 /* NSString+PAEmptyString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PAEmptyString.h"; sourceTree = "<group>"; };
+		754BB70019F50C3200E15493 /* NSString+PAEmptyString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PAEmptyString.m"; sourceTree = "<group>"; };
 		9773AA9DCE194302A02393E6 /* Pods-PupaDemo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PupaDemo.xcconfig"; path = "../Pods/Pods-PupaDemo.xcconfig"; sourceTree = "<group>"; };
 		9FA84F8D16C642F98C79529C /* libPods-PupaDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PupaDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A43477ED3CE14D9584B3A5F9 /* libPods-PupaDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PupaDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -261,6 +264,8 @@
 				7544461919E67B730018E10C /* NSString+PAReplacing.m */,
 				7544461A19E67B730018E10C /* NSString+PAURLEscape.h */,
 				7544461B19E67B730018E10C /* NSString+PAURLEscape.m */,
+				754BB6FF19F50C3200E15493 /* NSString+PAEmptyString.h */,
+				754BB70019F50C3200E15493 /* NSString+PAEmptyString.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -434,6 +439,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7544462119E67B730018E10C /* NSDictionary+PAJSONSerialization.m in Sources */,
+				754BB70119F50C3200E15493 /* NSString+PAEmptyString.m in Sources */,
 				750C36AF18C5B90C0014AD7D /* main.m in Sources */,
 				7544462219E67B730018E10C /* NSString+PADigest.m in Sources */,
 				7544462019E67B730018E10C /* NSDate+PATimeInterval.m in Sources */,
