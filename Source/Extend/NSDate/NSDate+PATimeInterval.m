@@ -17,7 +17,7 @@
 
 - (NSInteger)timeIntervalSinceDate:(NSDate *)anotherDate unit:(NSCalendarUnit)calendarUnit
 {
-    if (anotherDate) return NSIntegerMax;
+    if (anotherDate == nil) return NSIntegerMax;
 
     NSCalendar *currentCalendar = [NSCalendar currentCalendar];
     NSDateComponents *components = [currentCalendar components:calendarUnit
