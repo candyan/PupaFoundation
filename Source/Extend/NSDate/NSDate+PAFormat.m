@@ -10,28 +10,58 @@
 
 @implementation NSDate (PAFormat)
 
++ (NSCache *)dateFormatCache
+{
+    static NSCache *singleton;
+
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+      singleton = [[NSCache alloc] init];
+      singleton.totalCostLimit = 100;
+    });
+
+    return singleton;
+}
+
 - (NSString *)stringWithFormat:(NSString *)formatString
 {
-  NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    NSString *cacheKey = [NSString stringWithFormat:@"formatString: %@", formatString];
+    NSString *formattedString = [[NSDate dateFormatCache] objectForKey:cacheKey];
 
-  NSLocale * locale = [[NSLocale alloc] initWithLocaleIdentifier:@"zh_Hans"];
-  [formatter setLocale:locale];
-  [formatter setTimeZone:[NSTimeZone localTimeZone]];
-  
-  [formatter setDateFormat:formatString];
-  return [formatter stringFromDate:self];
+    if (formattedString == nil) {
+        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+
+        NSLocale *locale = [[NSLocale alloc] initWithLocaleIdentifier:@"zh_Hans"];
+        [formatter setLocale:locale];
+        [formatter setTimeZone:[NSTimeZone localTimeZone]];
+
+        [formatter setDateFormat:formatString];
+        formattedString = [formatter stringFromDate:self];
+
+        [[NSDate dateFormatCache] setObject:formattedString forKey:cacheKey cost:1];
+    }
+
+    return formattedString;
 }
 
 + (NSDate *)dateFromString:(NSString *)string format:(NSString *)formatString
 {
-  NSDateFormatter * formatter = [[NSDateFormatter alloc] init];
+    NSString *cacheKey = [NSString stringWithFormat:@"dateString: %@ format: %@", string, formatString];
+    NSDate *date = [[NSDate dateFormatCache] objectForKey:cacheKey];
+    if (date == nil) {
+        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
 
-  NSLocale * locale = [[NSLocale alloc] initWithLocaleIdentifier:@"zh_Hans"];
-  [formatter setLocale:locale];
-  [formatter setTimeZone:[NSTimeZone timeZoneWithName:@"Asia/Shanghai"]];
+        NSLocale *locale = [[NSLocale alloc] initWithLocaleIdentifier:@"zh_Hans"];
+        [formatter setLocale:locale];
+        [formatter setTimeZone:[NSTimeZone timeZoneWithName:@"Asia/Shanghai"]];
 
-  [formatter setDateFormat:formatString];
-  return [formatter dateFromString:string];
+        [formatter setDateFormat:formatString];
+        date = [formatter dateFromString:string];
+
+        [[NSDate dateFormatCache] setObject:date forKey:cacheKey];
+    }
+
+    return date;
 }
 
 @end
