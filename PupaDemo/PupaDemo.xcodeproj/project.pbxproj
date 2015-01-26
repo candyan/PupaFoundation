@@ -34,6 +34,7 @@
 		7544462319E67B730018E10C /* NSString+PAReplacing.m in Sources */ = {isa = PBXBuildFile; fileRef = 7544461919E67B730018E10C /* NSString+PAReplacing.m */; };
 		7544462419E67B730018E10C /* NSString+PAURLEscape.m in Sources */ = {isa = PBXBuildFile; fileRef = 7544461B19E67B730018E10C /* NSString+PAURLEscape.m */; };
 		754BB70119F50C3200E15493 /* NSString+PAEmptyString.m in Sources */ = {isa = PBXBuildFile; fileRef = 754BB70019F50C3200E15493 /* NSString+PAEmptyString.m */; };
+		75C845531A76548A00CADAC1 /* NSMutableArray+PAOperationExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C845521A76548A00CADAC1 /* NSMutableArray+PAOperationExtend.m */; };
 		938137ECB61F4D7BAA6DFB8B /* libPods-PupaDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FA84F8D16C642F98C79529C /* libPods-PupaDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +90,8 @@
 		7544461D19E67B730018E10C /* PupaFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PupaFoundation.h; sourceTree = "<group>"; };
 		754BB6FF19F50C3200E15493 /* NSString+PAEmptyString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PAEmptyString.h"; sourceTree = "<group>"; };
 		754BB70019F50C3200E15493 /* NSString+PAEmptyString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PAEmptyString.m"; sourceTree = "<group>"; };
+		75C845511A76548A00CADAC1 /* NSMutableArray+PAOperationExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+PAOperationExtend.h"; sourceTree = "<group>"; };
+		75C845521A76548A00CADAC1 /* NSMutableArray+PAOperationExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+PAOperationExtend.m"; sourceTree = "<group>"; };
 		9773AA9DCE194302A02393E6 /* Pods-PupaDemo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PupaDemo.xcconfig"; path = "../Pods/Pods-PupaDemo.xcconfig"; sourceTree = "<group>"; };
 		9FA84F8D16C642F98C79529C /* libPods-PupaDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PupaDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A43477ED3CE14D9584B3A5F9 /* libPods-PupaDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PupaDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -218,6 +221,7 @@
 		7544460919E67B730018E10C /* Extend */ = {
 			isa = PBXGroup;
 			children = (
+				75C845501A76544B00CADAC1 /* NSArray */,
 				7544460A19E67B730018E10C /* NSData */,
 				7544460D19E67B730018E10C /* NSDate */,
 				7544461219E67B730018E10C /* NSDictionary */,
@@ -268,6 +272,15 @@
 				754BB70019F50C3200E15493 /* NSString+PAEmptyString.m */,
 			);
 			path = NSString;
+			sourceTree = "<group>";
+		};
+		75C845501A76544B00CADAC1 /* NSArray */ = {
+			isa = PBXGroup;
+			children = (
+				75C845511A76548A00CADAC1 /* NSMutableArray+PAOperationExtend.h */,
+				75C845521A76548A00CADAC1 /* NSMutableArray+PAOperationExtend.m */,
+			);
+			path = NSArray;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -446,6 +459,7 @@
 				750C36BC18C5B90C0014AD7D /* PADViewController.m in Sources */,
 				7544462419E67B730018E10C /* NSString+PAURLEscape.m in Sources */,
 				7544462319E67B730018E10C /* NSString+PAReplacing.m in Sources */,
+				75C845531A76548A00CADAC1 /* NSMutableArray+PAOperationExtend.m in Sources */,
 				7544461F19E67B730018E10C /* NSDate+PAFormat.m in Sources */,
 				750C36B318C5B90C0014AD7D /* PADAppDelegate.m in Sources */,
 				7544461E19E67B730018E10C /* NSData+PADigest.m in Sources */,

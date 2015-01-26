@@ -22,5 +22,6 @@
 #import "NSDate+PATimeInterval.h"
 
 #import "NSDictionary+PAJSONSerialization.h"
+#import "NSMutableArray+PAOperationExtend.h"
 
 #endif
