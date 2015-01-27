@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name          = 'PupaFoundation'
-  s.version       = '1.1.2'
+  s.version       = '1.1.3'
   s.summary       = 'Pupa is a custom foundation framework for Cocoa'
   s.homepage      = 'https://github.com/candyan/PupaFoundation'
   s.license       = 'MIT'
