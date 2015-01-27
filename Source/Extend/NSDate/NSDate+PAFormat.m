@@ -25,7 +25,7 @@
 
 - (NSString *)stringWithFormat:(NSString *)formatString
 {
-    NSString *cacheKey = [NSString stringWithFormat:@"formatString: %@", formatString];
+    NSString *cacheKey = [NSString stringWithFormat:@"dateForString: %@ format: %@", self, formatString];
     NSString *formattedString = [[NSDate dateFormatCache] objectForKey:cacheKey];
 
     if (formattedString == nil) {
@@ -46,7 +46,7 @@
 
 + (NSDate *)dateFromString:(NSString *)string format:(NSString *)formatString
 {
-    NSString *cacheKey = [NSString stringWithFormat:@"dateString: %@ format: %@", string, formatString];
+    NSString *cacheKey = [NSString stringWithFormat:@"dateWithString: %@ format: %@", string, formatString];
     NSDate *date = [[NSDate dateFormatCache] objectForKey:cacheKey];
     if (date == nil) {
         NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
