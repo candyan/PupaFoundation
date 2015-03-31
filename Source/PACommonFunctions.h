@@ -6,6 +6,8 @@
 //  Copyright (c) 2014年 Douban.Inc. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
+
 #ifndef PupaDemo_PACommonFunctions_h
 #define PupaDemo_PACommonFunctions_h
 
@@ -43,5 +45,8 @@
         dispatch_async(dispatch_get_main_queue(), block);                                                              \
     }
 #endif
+
+extern CGPoint PA2DPointMakeWith1DPoint(NSUInteger point, NSUInteger countPerRow);
+extern NSUInteger PA1DPointWith2DPoint(CGPoint point, NSUInteger countPerRow);
 
 #endif

@@ -34,6 +34,7 @@
 		7544462319E67B730018E10C /* NSString+PAReplacing.m in Sources */ = {isa = PBXBuildFile; fileRef = 7544461919E67B730018E10C /* NSString+PAReplacing.m */; };
 		7544462419E67B730018E10C /* NSString+PAURLEscape.m in Sources */ = {isa = PBXBuildFile; fileRef = 7544461B19E67B730018E10C /* NSString+PAURLEscape.m */; };
 		754BB70119F50C3200E15493 /* NSString+PAEmptyString.m in Sources */ = {isa = PBXBuildFile; fileRef = 754BB70019F50C3200E15493 /* NSString+PAEmptyString.m */; };
+		75C722251ACA8EC4003F991C /* PACommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C722241ACA8EC4003F991C /* PACommonFunctions.m */; };
 		75C845531A76548A00CADAC1 /* NSMutableArray+PAOperationExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C845521A76548A00CADAC1 /* NSMutableArray+PAOperationExtend.m */; };
 		75C9394E1AC8E9A50084413B /* NSURL+PAURLParsing.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C9394D1AC8E9A50084413B /* NSURL+PAURLParsing.m */; };
 		938137ECB61F4D7BAA6DFB8B /* libPods-PupaDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FA84F8D16C642F98C79529C /* libPods-PupaDemo.a */; };
@@ -91,6 +92,7 @@
 		7544461D19E67B730018E10C /* PupaFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PupaFoundation.h; sourceTree = "<group>"; };
 		754BB6FF19F50C3200E15493 /* NSString+PAEmptyString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PAEmptyString.h"; sourceTree = "<group>"; };
 		754BB70019F50C3200E15493 /* NSString+PAEmptyString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PAEmptyString.m"; sourceTree = "<group>"; };
+		75C722241ACA8EC4003F991C /* PACommonFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PACommonFunctions.m; sourceTree = "<group>"; };
 		75C845511A76548A00CADAC1 /* NSMutableArray+PAOperationExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+PAOperationExtend.h"; sourceTree = "<group>"; };
 		75C845521A76548A00CADAC1 /* NSMutableArray+PAOperationExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+PAOperationExtend.m"; sourceTree = "<group>"; };
 		75C9394C1AC8E9A50084413B /* NSURL+PAURLParsing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+PAURLParsing.h"; sourceTree = "<group>"; };
@@ -213,9 +215,10 @@
 		7544460819E67B730018E10C /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				7544461D19E67B730018E10C /* PupaFoundation.h */,
 				7544460919E67B730018E10C /* Extend */,
 				7544461C19E67B730018E10C /* PACommonFunctions.h */,
-				7544461D19E67B730018E10C /* PupaFoundation.h */,
+				75C722241ACA8EC4003F991C /* PACommonFunctions.m */,
 			);
 			name = Source;
 			path = ../../Source;
@@ -469,6 +472,7 @@
 				750C36AF18C5B90C0014AD7D /* main.m in Sources */,
 				7544462219E67B730018E10C /* NSString+PADigest.m in Sources */,
 				7544462019E67B730018E10C /* NSDate+PATimeInterval.m in Sources */,
+				75C722251ACA8EC4003F991C /* PACommonFunctions.m in Sources */,
 				750C36BC18C5B90C0014AD7D /* PADViewController.m in Sources */,
 				7544462419E67B730018E10C /* NSString+PAURLEscape.m in Sources */,
 				7544462319E67B730018E10C /* NSString+PAReplacing.m in Sources */,
