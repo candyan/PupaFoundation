@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 #ifndef PupaDemo_PACommonFunctions_h
 #define PupaDemo_PACommonFunctions_h
