@@ -11,12 +11,14 @@
 
 #import "PACommonFunctions.h"
 
-#import "NSString+PADigest.h"
 #import "NSData+PADigest.h"
+#import "NSString+PADigest.h"
 
+#import "NSAttributedString+PACalculateBound.h"
+#import "NSString+PACalculateBound.h"
+#import "NSString+PAEmptyString.h"
 #import "NSString+PAReplacing.h"
 #import "NSString+PAURLEscape.h"
-#import "NSString+PAEmptyString.h"
 
 #import "NSURL+PAURLParsing.h"
 
