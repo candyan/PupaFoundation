@@ -34,6 +34,8 @@
 		7544462319E67B730018E10C /* NSString+PAReplacing.m in Sources */ = {isa = PBXBuildFile; fileRef = 7544461919E67B730018E10C /* NSString+PAReplacing.m */; };
 		7544462419E67B730018E10C /* NSString+PAURLEscape.m in Sources */ = {isa = PBXBuildFile; fileRef = 7544461B19E67B730018E10C /* NSString+PAURLEscape.m */; };
 		754BB70119F50C3200E15493 /* NSString+PAEmptyString.m in Sources */ = {isa = PBXBuildFile; fileRef = 754BB70019F50C3200E15493 /* NSString+PAEmptyString.m */; };
+		7571AB4F1C23FE2D008DCBA4 /* NSString+PACalculateBound.m in Sources */ = {isa = PBXBuildFile; fileRef = 7571AB4E1C23FE2D008DCBA4 /* NSString+PACalculateBound.m */; };
+		7571AB521C23FE6F008DCBA4 /* NSAttributedString+PACalculateBound.m in Sources */ = {isa = PBXBuildFile; fileRef = 7571AB511C23FE6F008DCBA4 /* NSAttributedString+PACalculateBound.m */; };
 		75C722251ACA8EC4003F991C /* PACommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C722241ACA8EC4003F991C /* PACommonFunctions.m */; };
 		75C845531A76548A00CADAC1 /* NSMutableArray+PAOperationExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C845521A76548A00CADAC1 /* NSMutableArray+PAOperationExtend.m */; };
 		75C9394E1AC8E9A50084413B /* NSURL+PAURLParsing.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C9394D1AC8E9A50084413B /* NSURL+PAURLParsing.m */; };
@@ -92,6 +94,10 @@
 		7544461D19E67B730018E10C /* PupaFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PupaFoundation.h; sourceTree = "<group>"; };
 		754BB6FF19F50C3200E15493 /* NSString+PAEmptyString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PAEmptyString.h"; sourceTree = "<group>"; };
 		754BB70019F50C3200E15493 /* NSString+PAEmptyString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PAEmptyString.m"; sourceTree = "<group>"; };
+		7571AB4D1C23FE2D008DCBA4 /* NSString+PACalculateBound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PACalculateBound.h"; sourceTree = "<group>"; };
+		7571AB4E1C23FE2D008DCBA4 /* NSString+PACalculateBound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PACalculateBound.m"; sourceTree = "<group>"; };
+		7571AB501C23FE6F008DCBA4 /* NSAttributedString+PACalculateBound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+PACalculateBound.h"; sourceTree = "<group>"; };
+		7571AB511C23FE6F008DCBA4 /* NSAttributedString+PACalculateBound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+PACalculateBound.m"; sourceTree = "<group>"; };
 		75C722241ACA8EC4003F991C /* PACommonFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PACommonFunctions.m; sourceTree = "<group>"; };
 		75C845511A76548A00CADAC1 /* NSMutableArray+PAOperationExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+PAOperationExtend.h"; sourceTree = "<group>"; };
 		75C845521A76548A00CADAC1 /* NSMutableArray+PAOperationExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+PAOperationExtend.m"; sourceTree = "<group>"; };
@@ -277,6 +283,10 @@
 				7544461B19E67B730018E10C /* NSString+PAURLEscape.m */,
 				754BB6FF19F50C3200E15493 /* NSString+PAEmptyString.h */,
 				754BB70019F50C3200E15493 /* NSString+PAEmptyString.m */,
+				7571AB4D1C23FE2D008DCBA4 /* NSString+PACalculateBound.h */,
+				7571AB4E1C23FE2D008DCBA4 /* NSString+PACalculateBound.m */,
+				7571AB501C23FE6F008DCBA4 /* NSAttributedString+PACalculateBound.h */,
+				7571AB511C23FE6F008DCBA4 /* NSAttributedString+PACalculateBound.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -469,6 +479,8 @@
 			files = (
 				7544462119E67B730018E10C /* NSDictionary+PAJSONSerialization.m in Sources */,
 				754BB70119F50C3200E15493 /* NSString+PAEmptyString.m in Sources */,
+				7571AB521C23FE6F008DCBA4 /* NSAttributedString+PACalculateBound.m in Sources */,
+				7571AB4F1C23FE2D008DCBA4 /* NSString+PACalculateBound.m in Sources */,
 				750C36AF18C5B90C0014AD7D /* main.m in Sources */,
 				7544462219E67B730018E10C /* NSString+PADigest.m in Sources */,
 				7544462019E67B730018E10C /* NSDate+PATimeInterval.m in Sources */,
